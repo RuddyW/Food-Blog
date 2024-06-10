@@ -1,0 +1,282 @@
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+img{
+  border-radius: 10px;
+}
+
+
+/***********header decoration***********/
+header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: transparent;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(50px);
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.logo{
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: green;
+  text-decoration: none;
+  padding: 0 1.2rem;
+}
+
+.logo:hover{
+  cursor: pointer;
+  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  color: green;
+}
+
+.navbar a{
+  padding: 0 1.2rem;
+  text-decoration: none;
+  font-weight: 650;
+  color: black;
+}
+
+.navbar a:hover{
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: underline;
+  backdrop-filter: blur(30px);
+  color: green;
+}
+
+/***********intro decoration***********/
+.intro{
+  text-align: center;
+  margin: 15px;
+}
+
+.intro h1{
+  color: green;
+  font-size: 2.0rem;
+  font-size: 900;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 25px;
+}
+
+.intro small{
+  font-weight: 800;
+}
+
+.intro p{
+  margin: 20px 60px;
+  font-size: 1.2rem;
+}
+
+.intro img{
+  max-width: 100%;
+}
+
+/***********main/Card decoration***********/
+main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+main a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  align-self: normal;
+}
+
+.card h4{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card p{
+  margin: 10px;
+  text-align: left;
+}
+
+.card .btn{
+  text-align: center;
+  background-color: green;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: auto;
+  padding: 5px 3rem;
+}
+
+main img{
+  max-width: 200px;
+  height: 200px;
+}
+
+
+/***********footer decoration***********/
+footer{
+  background-image: url("https://media2.giphy.com/media/3dbHrkcdEZt7JlWyY6/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: green;*/
+  align-items: center;
+  text-align: center;
+}
+
+.footer-info{
+  display: flex;
+  padding: 1.3rem 10%;
+  justify-content: space-between;
+}
+
+.footer-info h4{
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 23px;
+}
+
+.footer-info a{
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-info a:hover{
+  cursor: pointer;
+  border-radius: 20px;
+  text-decoration: underline;
+  backdrop-filter: blur(30px);
+  color: grey;
+}
+
+
+/**********************about section**********************/
+.bodyabout{
+  max-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.about{
+  margin: 30px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: left;
+}
+
+/**********************recipe section**********************/
+.recipe-section{
+  max-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.intro .introparagraph{
+  text-align: center;
+  font: bold;
+  font-weight: 800;
+}
+
+.recipe-description{
+  text-align: left;
+  font-size: 1.3rem;
+  margin: 50px;
+}
+
+.intro .recipeimg{
+  width: 500px;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+}
+
+.gif{
+  max-width: 80%;
+  text-align: center;
+}
+
+/**********************Media and keyframe**********************/
+@media (max-width: 699px){
+  .logo{
+    font-size: 1.3rem;
+    font-weight: 900;
+   padding: 0 0.4rem;
+  } 
+
+  .navbar a{
+    padding: 0 0.4rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.0rem;
+    color: black;
+}
+  .intro p{
+    text-align: left;
+    margin: 20px 5px;
+    font-size: 1.2rem;
+  }
+  
+  .recipe-description{
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 20px 4px;
+}
+  .gif{
+  max-width: 100%;
+  text-align: center;
+  }
+
+  a {
+  -webkit-tap-highlight-color: transparent;
+  }
+  
+  .about{
+  margin: 30px 4px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+}
